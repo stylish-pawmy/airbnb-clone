@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 80px;
+}
+
 header {
   width: 100vw;
   position: fixed;
@@ -20,14 +24,23 @@ header {
       margin: 0px;
     }
 
+main {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--navbar-height);
+}
 
 .images-grid {
-  max-width: 400px;
-  max-height: 250px;
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 8.5px;
+  width: fit-content;
+  height: fit-content;
+
+  padding-top: 33px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
   .images-grid > div > img {
@@ -39,6 +52,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 8.5px;
+    margin: 0;
   }
 
   .grid-item:nth-child(even)
