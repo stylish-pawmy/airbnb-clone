@@ -64,3 +64,24 @@ main {
   {
     justify-content: center;
   }
+
+
+.text-headline {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+}
+
+.text-body {
+  font-size: 15.5px;
+  font-weight: 300;
+  width: 320px;
+  color: #222222;
+}
+
+@media screen and (max-width: 800px)
+{
+  main {
+    padding: 36px;
+  }
+}
