@@ -10,12 +10,43 @@ header {
   padding: 22px 30px;
 }
 
-header > nav {
-  margin: 0px;
-  padding: 0px;
+  header > nav {
+    margin: 0px;
+    padding: 0px;
+  }
+
+    header > nav > img {
+      width: 82px;
+      margin: 0px;
+    }
+
+
+.images-grid {
+  max-width: 400px;
+  max-height: 250px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8.5px;
 }
 
-header > nav > img {
-  width: 82px;
-  margin: 0px;
-}
+  .images-grid > div > img {
+    max-width: 72px;
+    border-radius: 9px;
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8.5px;
+  }
+
+  .grid-item:nth-child(even)
+  {
+    padding-top: 50px;
+  }
+
+  .grid-item:nth-child(1)
+  {
+    justify-content: center;
+  }
