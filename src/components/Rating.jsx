@@ -1,11 +1,11 @@
 import "../App.css";
-import { default as startImage } from "../assets/star.png";
+import { default as starImage } from "../assets/star.png";
 
-export default function Rating() {
+export default function Rating(props) {
     return(
         <div className="rating">
-            <img src={startImage} /> 5.0
-            <span className="rating-info"> (6) <i className="comma"></i> USA</span>
+            <img src={starImage} /> {props.rating}
+            <span className="rating-info"> ({props.reviewCount}) <i className="comma"></i> {props.country}</span>
         </div>
     );
 }

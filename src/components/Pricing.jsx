@@ -1,9 +1,9 @@
 import "../App.css";
 
-export default function Pricing() {
+export default function Pricing(props) {
     return(
         <div className="pricing">
-            From $136 <span className="pricing-unit"> / person</span>
+            From ${props.price} <span className="pricing-unit"> / person</span>
         </div>
     );
 }
