@@ -2,22 +2,27 @@ import "../App.css";
 import { default as ExperiencesText } from "./ExperiencesText.jsx";
 import { default as Card } from "./Card.jsx";
 
-// Card Images
-import { default as image_1 } from "../assets/japanese.jpg";
+// Data
+import { default as experiencesData } from "../data/experiencesData.js";
 
 export default function Experiences() {
+    const experiencesCards = experiencesData.map(
+        (experience) => (
+            <Card
+                    coverImg={experience.coverImg}
+                    rating={experience.stats.rating}
+                    reviewCount={experience.stats.reviewCount}
+                    location={experience.location}
+                    title={experience.title}
+                    price={experience.price}
+            />)
+    );
+
     return (
         <>
             <ExperiencesText />
             <div className="card-container">
-                <Card
-                    coverImg={image_1}
-                    rating="5.0"
-                    reviewCount={6}
-                    location="USA"
-                    title="Japan's century of wisdom"
-                    price={136}
-                />
+                {experiencesCards}
             </div>
         </>
     );

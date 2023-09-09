@@ -1,16 +1,10 @@
-import {default as cookingImg } from "./images/cooking.jpg";
-import {default as artImg } from "./images/art.jpg";
-import {default as fitnessImg } from "./images/fitness.jpg";
-import {default as languageImg } from "./images/language.jpg";
-import {default as yogaImg } from "./images/yoga.jpg";
-
 export default [
     {
       id: 1,
       title: "Cooking Masterclass",
       description: "Learn the art of cooking gourmet dishes from professional chefs. Impress your friends and family with your culinary skills.",
       price: 79,
-      coverImg: {cookingImg},
+      coverImg: "/public/images/cooking.jpg",
       stats: {
         rating: 4.5,
         reviewCount: 50
@@ -23,7 +17,7 @@ export default [
       title: "Fitness Bootcamp",
       description: "Get fit and stay healthy with our intensive fitness bootcamp. Achieve your fitness goals with expert trainers and a supportive community.",
       price: 199,
-      coverImg: {fitnessImg},
+      coverImg: "/public/images/fitness.jpg",
       stats: {
         rating: 4.8,
         reviewCount: 40
@@ -36,7 +30,7 @@ export default [
       title: "Learn a New Language",
       description: "Embark on a linguistic journey and master a new language. Open doors to new cultures and opportunities.",
       price: 149,
-      coverImg: {languageImg},
+      coverImg: "/public/images/language.jpg",
       stats: {
         rating: 4.7,
         reviewCount: 35
@@ -49,7 +43,7 @@ export default [
       title: "Art Workshop",
       description: "Unleash your creativity through our art workshop. Experiment with various art forms and express yourself through colors and shapes.",
       price: 99,
-      coverImg: {artImg},
+      coverImg: "/public/images/art.jpg",
       stats: {
         rating: 4.6,
         reviewCount: 30
@@ -62,7 +56,7 @@ export default [
       title: "Yoga and Mindfulness Retreat",
       description: "Reconnect with your inner self through yoga and mindfulness. Find peace, balance, and relaxation in a serene retreat environment.",
       price: 249,
-      coverImg: {yogaImg},
+      coverImg: "/public/images/yoga.jpg",
       stats: {
         rating: 4.9,
         reviewCount: 25

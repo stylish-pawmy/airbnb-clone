@@ -10,7 +10,7 @@ export default function Card(props) {
             <div className="state-tag">
                 {props.state}
             </div>
-            <Rating rating={props.rating} reviewCount={props.reviewCount} country={props.location} />
+            <Rating rating={props.rating} reviewCount={props.reviewCount} location={props.location} />
             <h5 className="card-title">{props.title}</h5>
             <Pricing price={props.price} />
         </div>
