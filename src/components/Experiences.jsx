@@ -9,6 +9,7 @@ export default function Experiences() {
     const experiencesCards = experiencesData.map(
         (experience) => (
             <Card
+                    key={experience.id}
                     coverImg={experience.coverImg}
                     rating={experience.stats.rating}
                     reviewCount={experience.stats.reviewCount}
