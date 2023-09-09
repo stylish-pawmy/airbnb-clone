@@ -10,13 +10,7 @@ export default function Experiences() {
         (experience) => (
             <Card
                     key={experience.id}
-                    coverImg={experience.coverImg}
-                    rating={experience.stats.rating}
-                    reviewCount={experience.stats.reviewCount}
-                    location={experience.location}
-                    title={experience.title}
-                    price={experience.price}
-                    openSpots={experience.openSpots}
+                    item={experience}
             />)
     );
 

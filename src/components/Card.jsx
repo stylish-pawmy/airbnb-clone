@@ -6,7 +6,7 @@ import { default as Pricing } from "./Pricing.jsx";
 export default function Card(props) {
     
     let badgeText;
-    if (props.openSpots === 0)
+    if (props.item.openSpots === 0)
     {
         badgeText = "SOLD OUT"
     }
@@ -17,13 +17,13 @@ export default function Card(props) {
 
     return(
         <div className="card">
-            <img src={props.coverImg} />
+            <img src={props.item.coverImg} />
             {badgeText && <div className="state-tag">
                 {badgeText}
             </div>}
-            <Rating rating={props.rating} reviewCount={props.reviewCount} location={props.location} />
-            <h5 className="card-title">{props.title}</h5>
-            <Pricing price={props.price} />
+            <Rating rating={props.item.stats.rating} reviewCount={props.item.stats.reviewCount} location={props.item.location} />
+            <h5 className="card-title">{props.item.title}</h5>
+            <Pricing price={props.item.price} />
         </div>
     );
 }
