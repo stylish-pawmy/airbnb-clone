@@ -16,6 +16,7 @@ export default function Experiences() {
                     location={experience.location}
                     title={experience.title}
                     price={experience.price}
+                    openSpots={experience.openSpots}
             />)
     );
 

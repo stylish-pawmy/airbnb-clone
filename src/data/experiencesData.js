@@ -36,7 +36,7 @@ export default [
         reviewCount: 35
       },
       location: "USA",
-      openSpots: 20
+      openSpots: 0
     },
     {
       id: 4,
