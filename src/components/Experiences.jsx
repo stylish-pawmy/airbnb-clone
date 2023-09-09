@@ -11,10 +11,10 @@ export default function Experiences() {
             <ExperiencesText />
             <div className="card-container">
                 <Card
-                    img={image_1}
+                    coverImg={image_1}
                     rating="5.0"
                     reviewCount={6}
-                    country="USA"
+                    location="USA"
                     title="Japan's century of wisdom"
                     price={136}
                 />
